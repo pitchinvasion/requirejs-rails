@@ -1812,7 +1812,7 @@ var requirejs, require, define;
                 node.addEventListener('error', context.onScriptError, false);
             }
 
-            if (url.substr(-3) !== ".js")
+            if (url.slice(-3) !== ".js")
             {
                 // Force .js to be at the end of the string
                 // I can't be arsed to work out why this doesn't happen sometimes
